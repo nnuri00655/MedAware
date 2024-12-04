@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+}
+
+.language-btn, .sign-up-btn {
+    margin-left: 20px;
+    padding: 10px 15px;
+    background: #007B7F;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background: #f7f7f7;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    padding: 12px 24px;
+    background: #00b5ad;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.feature-cards, .why-cards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 20px;
+}
+
+.feature-card, .why-card {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background: #eef7f9;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #007B7F;
+    color: #fff;
+}
+
+}
+
+.language-btn, .sign-up-btn {
+    margin-left: 20px;
+    padding: 10px 15px;
+    background: #007B7F;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.hero, .chat-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background: #f7f7f7;
+}
+
+.hero-content h1, .chat-intro h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-content p, .chat-intro p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.cta-btn, .chat-start-btn {
+    padding: 12px 24px;
+    background: #00b5ad;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.chat-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.chat-bot-image img {
+    max-width: 100px;
+}
+
+.chat-window {
+    max-width: 400px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.chat-bubble {
+    margin-bottom: 10px;
+    background: #e6f7f9;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.chat-options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.chat-option-btn {
+    padding: 8px 12px;
+    border: none;
+    background: #00b5ad;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.chat-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.feature-cards, .why-cards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 20px;
+}
+
+.feature-card, .why-card {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background: #eef7f9;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #007B7F;
+    color: #fff;
+}
