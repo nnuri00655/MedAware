@@ -1,0 +1,104 @@
+My codes for DB 
+
+Table users
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255),
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    birth_date DATE,
+    gender VARCHAR(10),
+    phone_number VARCHAR(15),
+    registration_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+Table roles
+CREATE TABLE roles (
+    id SERIAL PRIMARY KEY,
+    role_name VARCHAR(50) UNIQUE NOT NULL
+);
+
+Table user_roles
+CREATE TABLE user_roles (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+    role_id INTEGER REFERENCES roles(id) ON DELETE CASCADE
+);
+
+Table medical_history
+CREATE TABLE medical_history (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+    diagnosis TEXT,
+    probability NUMERIC(5,2),
+    generated_from VARCHAR(50),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    notes TEXT
+);
+
+Table symptoms
+CREATE TABLE symptoms (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+    symptom_description TEXT NOT NULL,
+    severity_level INTEGER,
+    reported_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+Table xray_images
+CREATE TABLE xray_images (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+    image_url VARCHAR(255) NOT NULL,
+    analysis_result TEXT,
+    probability NUMERIC(5,2),
+    uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+Table surveys
+CREATE TABLE surveys (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(255),
+    description TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+user_surveys
+CREATE TABLE user_surveys (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+    survey_id INTEGER REFERENCES surveys(id) ON DELETE CASCADE,
+    response JSONB,
+    predicted_diagnosis VARCHAR(255),
+    confidence NUMERIC(5,2),
+    submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+Table treatment_plans
+CREATE TABLE treatment_plans (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+    plan_details TEXT,
+    start_date DATE,
+    end_date DATE,
+    progress VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+Table notifications
+CREATE TABLE notifications (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+    message TEXT NOT NULL,
+    is_read BOOLEAN DEFAULT FALSE,
+    sent_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+Table medical_reports
+CREATE TABLE medical_reports (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+    report_text TEXT NOT NULL,
+    generated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
