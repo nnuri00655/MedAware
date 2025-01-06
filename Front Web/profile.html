@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedAware</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="MedAware Logo">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html" data-i18n="navHome">Home</a></li>
+                <li><a href="diagnostics.html" data-i18n="navDiagnostics">Diagnostics</a></li>
+                <li><a href="news.html" data-i18n="navNews">News</a></li>
+                <li><a href="team.html" data-i18n="navTeam">Team</a></li>
+                <li><a href="recommendations.html" data-i18n="navRecommendations">Recommendations</a></li>
+            </ul>
+        </nav>
+        <div class="actions">
+            <div class="moon-icon">
+    <a href="index-dark.html">
+        <img src="images/moon.png" alt="Moon Icon">
+    </a>
+</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+    <div class="language-dropdown">
+    <button class="language-button" data-i18n="languageButton">English</button>
+                <ul class="language-list">
+                    <li><a href="#" data-lang="en">English</a></li>
+                    <li><a href="#" data-lang="ru">Русский</a></li>
+                    <li><a href="#" data-lang="kz">Қазақ</a></li>
+                </ul>
+</div>
+
+           
+            <a href="profle.html" class="signup" data-i18n="Profile">Profile</a>
+        </div>
+    </header>
+<main>
+    <section class="profile-section">
+        <h1 class="profile-title" data-i18n="profileTitle">Edit Profile</h1>
+        <form class="profile-form">
+            <div class="profile-left">
+                <h2 class="form-subtitle" data-i18n="personalInfoTitle">Personal Information</h2>
+                <div class="gender-select">
+                    <button type="button" class="gender-button active" data-i18n="genderMale">Male</button>
+                    <button type="button" class="gender-button" data-i18n="genderFemale">Female</button>
+                </div>
+                <div class="input-row">
+                    <input type="text" placeholder="Last Name" class="input-field" data-i18n-placeholder="lastNamePlaceholder">
+                    <input type="text" placeholder="First Name" class="input-field" data-i18n-placeholder="firstNamePlaceholder">
+                </div>
+                <div class="input-row">
+                    <input type="text" placeholder="Middle Name" class="input-field" data-i18n-placeholder="middleNamePlaceholder">
+                    <input type="text" placeholder="City" class="input-field" data-i18n-placeholder="cityPlaceholder">
+                </div>
+                <div class="input-row">
+                    <input type="date" class="input-field" data-i18n-placeholder="dateOfBirthPlaceholder">
+                    <select class="input-field" data-i18n-placeholder="bloodGroupPlaceholder">
+                        <option value="" disabled selected data-i18n="bloodGroupPlaceholder">Blood Group</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <button type="submit" class="save-button" data-i18n="saveButton">Save</button>
+            </div>
+            <div class="profile-right">
+                <h2 class="form-subtitle" data-i18n="photoTitle">Photo</h2>
+                <div class="photo-container">
+                    <img id="photo-preview" src="images/placeholder.png" alt="User Photo" class="profile-photo-image" style="display: none;" data-i18n-alt="userPhotoAlt">
+                    <label for="photo-input" id="upload-button" class="upload-photo-button" data-i18n="uploadPhotoButton">Upload Photo</label>
+                    <input type="file" id="photo-input" accept="image/*" style="display: none;">
+                </div>
+            </div>
+        </form>
+    </section>
+</main>
+
+    <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-links">
+            <div>
+                <h4 data-i18n="footerLinksHomeTitle">Home</h4>
+                <ul>
+                    <li><a href="diagnostics.html" data-i18n="footerDiagnostics">Diagnostics</a></li>
+                    <li><a href="news.html" data-i18n="footerNews">News</a></li>
+                    <li><a href="recommendations.html" data-i18n="footerRecommendations">Recommendations</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 data-i18n="footerHelpTitle">Help</h4>
+                <ul>
+                    <li><a href="terms.html" data-i18n="footerTerms">Terms</a></li>
+                    <li><a href="privacy.html" data-i18n="footerPrivacy">Privacy</a></li>
+                    <li><a href="faq.html" data-i18n="footerFAQ">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 data-i18n="footerCompanyTitle">Company</h4>
+                <ul>
+                    <li><a href="team.html" data-i18n="footerAboutUs">About us</a></li>
+                    <li><a href="contact.html" data-i18n="footerContactUs">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="subscribe">
+            <h4 data-i18n="footerSubscribeTitle">Subscribe</h4>
+            <form>
+                <input type="email" placeholder="Email address" data-i18n-placeholder="footerEmailPlaceholder">
+                <button type="submit">
+                    <img src="images/arrow-right.png" alt="Submit" data-i18n-alt="footerSubmitAlt">
+                </button>
+            </form>
+            <p data-i18n="footerMission"><br>Hello, we are MedAware. Our mission is to revolutionize medical education by making anatomy learning engaging, interactive, and accessible for everyone.</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p data-i18n="footerCopyright">&copy; 2024 MedAware. All rights reserved.</p>
+    </div>
+</footer>
+
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", () => {
+    const photoInput = document.getElementById("photo-input");
+    const photoPreview = document.getElementById("photo-preview");
+    const uploadButton = document.getElementById("upload-button");
+
+    photoInput.addEventListener("change", (event) => {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+
+            reader.onload = () => {
+                photoPreview.src = reader.result;
+                photoPreview.style.display = "block";
+
+                uploadButton.textContent = "Save";
+                uploadButton.style.backgroundColor = "#2EAEAD";
+                uploadButton.style.color = "white";
+            };
+
+            reader.readAsDataURL(file); 
+        }
+    });
+
+    uploadButton.addEventListener("click", () => {
+        if (uploadButton.textContent === "Save") {
+            alert("Photo saved successfully!");
+        }
+    });
+});
+
+</script>
+
+         <script src="script_lang.js"></script>
+
+</body>
+</html>

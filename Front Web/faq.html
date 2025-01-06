@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedAware</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="MedAware Logo">
+        </div>
+        <nav class="nav">
+            <ul>
+               <li><a href="index.html" data-i18n="navHome">Home</a></li>
+                <li><a href="diagnostics.html" data-i18n="navDiagnostics">Diagnostics</a></li>
+                <li><a href="news.html" data-i18n="navNews">News</a></li>
+                <li><a href="team.html" data-i18n="navTeam">Team</a></li>
+                <li><a href="recommendations.html" data-i18n="navRecommendations">Recommendations</a></li>
+
+            </ul>
+        </nav>
+        <div class="actions">
+            <div class="moon-icon">
+    <a href="index-black.html">
+        <img src="images/moon.png" alt="Moon Icon">
+    </a>
+</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+    <div class="language-dropdown">
+<button class="language-button" data-i18n="languageButton">English</button>
+                <ul class="language-list">
+                    <li><a href="#" data-lang="en">English</a></li>
+                    <li><a href="#" data-lang="ru">Русский</a></li>
+                    <li><a href="#" data-lang="kz">Қазақ</a></li>
+                </ul>
+</div>
+
+            <a href="signup.html" class="signup" data-i18n="signUp">Sign Up</a>
+        </div>
+    </header>
+
+  <main>
+    <div class="faq-container">
+        <h1 class="faq-title" data-i18n="faqTitle">Frequently Asked Questions</h1>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span data-i18n="faqQuestion1">What is MedAware?</span>
+                <span>+</span>
+            </div>
+            <div class="faq-answer" data-i18n="faqAnswer1">
+                MedAware is a platform designed to provide early diagnostic support through text descriptions, images, and questionnaires.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span data-i18n="faqQuestion2">How does it work?</span>
+                <span>+</span>
+            </div>
+            <div class="faq-answer" data-i18n="faqAnswer2">
+                Our platform uses AI technologies such as NLP and CNN to analyze data and provide insights into potential health issues.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span data-i18n="faqQuestion3">Is MedAware free to use?</span>
+                <span>+</span>
+            </div>
+            <div class="faq-answer" data-i18n="faqAnswer3">
+                Yes, MedAware offers a free version with basic features. Premium plans are also available for advanced diagnostics.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span data-i18n="faqQuestion4">How do I contact support?</span>
+                <span>+</span>
+            </div>
+            <div class="faq-answer" data-i18n="faqAnswer4">
+                You can reach us through our Contact Us page or email us at <a href="mailto:support@medaware.com">support@medaware.com</a>.
+            </div>
+        </div>
+    </div>
+</main>
+
+
+    <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-links">
+            <div>
+                <h4 data-i18n="footerLinksHomeTitle">Home</h4>
+                <ul>
+                    <li><a href="diagnostics.html" data-i18n="footerDiagnostics">Diagnostics</a></li>
+                    <li><a href="news.html" data-i18n="footerNews">News</a></li>
+                    <li><a href="recommendations.html" data-i18n="footerRecommendations">Recommendations</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 data-i18n="footerHelpTitle">Help</h4>
+                <ul>
+                    <li><a href="terms.html" data-i18n="footerTerms">Terms</a></li>
+                    <li><a href="privacy.html" data-i18n="footerPrivacy">Privacy</a></li>
+                    <li><a href="faq.html" data-i18n="footerFAQ">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 data-i18n="footerCompanyTitle">Company</h4>
+                <ul>
+                    <li><a href="team.html" data-i18n="footerAboutUs">About us</a></li>
+                    <li><a href="contact.html" data-i18n="footerContactUs">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="subscribe">
+            <h4 data-i18n="footerSubscribeTitle">Subscribe</h4>
+            <form>
+                <input type="email" placeholder="Email address" data-i18n-placeholder="footerEmailPlaceholder">
+                <button type="submit">
+                    <img src="images/arrow-right.png" alt="Submit" data-i18n-alt="footerSubmitAlt">
+                </button>
+            </form>
+            <p data-i18n="footerMission"><br>Hello, we are MedAware. Our mission is to revolutionize medical education by making anatomy learning engaging, interactive, and accessible for everyone.</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p data-i18n="footerCopyright">&copy; 2024 MedAware. All rights reserved.</p>
+    </div>
+</footer>
+
+  <script>
+   document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+        const parent = question.parentNode;
+        parent.classList.toggle('active');
+
+        document.querySelectorAll('.faq-item').forEach(item => {
+            if (item !== parent && item.classList.contains('active')) {
+                item.classList.remove('active');
+            }
+        });
+    });
+});
+</script>
+
+    <script src="script_lang.js"></script>
+
+
+</body>
+</html>

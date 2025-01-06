@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedAware</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d1b790b8-f8bc-4546-8c31-acf6452e4704&lang=ru_RU"></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="MedAware Logo">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html" data-i18n="navHome">Home</a></li>
+                <li><a href="diagnostics.html" data-i18n="navDiagnostics">Diagnostics</a></li>
+                <li><a href="news.html" data-i18n="navNews">News</a></li>
+                <li><a href="team.html" data-i18n="navTeam">Team</a></li>
+                <li><a href="recommendations.html" data-i18n="navRecommendations">Recommendations</a></li>
+            </ul>
+        </nav>
+        <div class="actions">
+            <div class="moon-icon">
+    <a href="index-black.html">
+        <img src="images/moon.png" alt="Moon Icon">
+    </a>
+</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+    <div class="language-dropdown">
+    <button class="language-button" data-i18n="languageButton">English</button>
+                <ul class="language-list">
+                    <li><a href="#" data-lang="en">English</a></li>
+                    <li><a href="#" data-lang="ru">Русский</a></li>
+                    <li><a href="#" data-lang="kz">Қазақ</a></li>
+                </ul>
+</div>
+
+            <a href="signup.html" class="signup" data-i18n="signUp">Sign Up</a>
+        </div>
+    </header>
+    
+   
+
+    <main>
+        <div class="container">
+            <div class="left-side">
+             <h1 data-i18n="contactsTitle">Our contacts</h1>
+<p data-i18n="contactsAddress">Almaty city, Manasa street 34</p>
+                <p><a href="tel:+77771234567" class="contact-link" style="text-decoration: none; color: white;">+7 (777) 123-45-67</a></p>
+<p><a href="mailto:medaware@gmail.com" class="contact-link" style="text-decoration: none; color: white;">medaware@gmail.com</a></p>
+
+            </div>
+            <div class="right-side">
+                <div id="map" style="width: 100%; height: 400px; border-radius: 10px; overflow: hidden;"></div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-links">
+            <div>
+                <h4 data-i18n="footerLinksHomeTitle">Home</h4>
+                <ul>
+                    <li><a href="diagnostics.html" data-i18n="footerDiagnostics">Diagnostics</a></li>
+                    <li><a href="news.html" data-i18n="footerNews">News</a></li>
+                    <li><a href="recommendations.html" data-i18n="footerRecommendations">Recommendations</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 data-i18n="footerHelpTitle">Help</h4>
+                <ul>
+                    <li><a href="terms.html" data-i18n="footerTerms">Terms</a></li>
+                    <li><a href="privacy.html" data-i18n="footerPrivacy">Privacy</a></li>
+                    <li><a href="faq.html" data-i18n="footerFAQ">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 data-i18n="footerCompanyTitle">Company</h4>
+                <ul>
+                    <li><a href="team.html" data-i18n="footerAboutUs">About us</a></li>
+                    <li><a href="contact.html" data-i18n="footerContactUs">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="subscribe">
+            <h4 data-i18n="footerSubscribeTitle">Subscribe</h4>
+            <form>
+                <input type="email" placeholder="Email address" data-i18n-placeholder="footerEmailPlaceholder">
+                <button type="submit">
+                    <img src="images/arrow-right.png" alt="Submit" data-i18n-alt="footerSubmitAlt">
+                </button>
+            </form>
+            <p data-i18n="footerMission"><br>Hello, we are MedAware. Our mission is to revolutionize medical education by making anatomy learning engaging, interactive, and accessible for everyone.</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p data-i18n="footerCopyright">&copy; 2024 MedAware. All rights reserved.</p>
+    </div>
+</footer>
+     <script src="map.js"></script>
+
+    <script src="script_lang.js"></script>
+
+</body>
+</html>

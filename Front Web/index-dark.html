@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedAware</title>
+    <link rel="stylesheet" href="styles_dark.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="MedAware Logo">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html" id="activepage">Home</a></li>
+                <li><a href="diagnostics.html">Diagnostics</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+        <div class="actions">
+            <div class="moon-icon">
+    <a href="index.html">
+        <img src="images/sun.png" alt="Sun Icon">
+    </a>
+</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+    <div class="language-dropdown">
+    <button class="language-button">English</button>
+    <ul class="language-list">
+        <li><a href="index.html">English</a></li>
+        <li><a href="index-ru">Russian</a></li>
+        <li><a href="index-kz">Kazakh</a></li>
+    </ul>
+</div>
+
+            <a href="signup.html" class="signup">Sign Up</a>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>MedAware</h1>
+                <p style="font-size: 2.5rem;">Digital Health Assistant</p>
+                <p>Get accurate diagnosis and recommendations for lung health with AI and professional advice</p>
+                <a href="#app" class="button">Get Started</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/lung.png" alt="Lung Health">
+            </div>
+        </section>
+        <section class="features">
+
+
+            <h2>How can MedAware boost your lung health?</h2> <br>
+            <p style="text-align: left;">Advanced AI diagnostics, personalized health tracking, and easy-to-access consultations to empower your respiratory wellness.</p>
+            <div class="feature-grid">
+                <div class="feature">
+                    <img src="images/aidiag.png" alt="AI Diagnostics">
+                    <h3>Accurate AI Diagnostics</h3>
+                    <p>Quick, reliable lung assessments with cutting-edge image analysis.</p>
+                </div>
+                <div class="feature">
+                    <img src="images/symptomchecker.png" alt="Symptom Checker">
+                    <h3>Symptom Checker</h3>
+                    <p>Personalized quizzes to help better understand your lung health.</p>
+                </div>
+                <div class="feature">
+                    <img src="images/health.png" alt="Health Tracking">
+                    <h3>Health Tracking Tools</h3>
+                    <p>Monitor symptoms and receive tailored recommendations.</p>
+                </div>
+                <div class="feature">
+                    <img src="images/online.png" alt="Online Consultations">
+                    <h3>Online Consultations</h3>
+                    <p>Connect with professionals anytime for advice and next steps.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose">
+    <h2>Why choose MedAware?</h2>
+    <div class="choose-grid">
+        <div class="choose-card">
+            <h3>1</h3>
+            <h4>AI-based diagnostic accuracy</h4>
+            <p>The artificial intelligence system is trained on thousands of images to provide accurate results.</p>
+        </div>
+        <div class="choose-card">
+            <h3>2</h3>
+            <h4>Privacy and data protection</h4>
+            <p>Your data is safe: we use encryption and adhere to strict privacy standards.</p>
+        </div>
+        <div class="choose-card">
+            <h3>3</h3>
+            <h4>Personalized recommendations</h4>
+            <p>Get advice based on your health and individual needs.</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="app" id="app">
+    <div class="app-content">
+        <h2>MedAware</h2>
+        <p>Download MedAware and start taking care of your lungs: accurate diagnosis, AI recommendations and specialist support - all in one app.</p>
+        <div class="download-buttons">
+            <a href="#"><img src="images/appstore.png" alt="App Store"></a>
+            <a href="#"><img src="images/google.png" alt="Google Play"></a>
+        </div>
+    </div>
+    <div class="app-mockup">
+        <img src="images/mockup2.png" alt="App Mockup">
+    </div>
+</section>
+
+<div id="qr-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <img id="qr-code" src="" alt="QR Code">
+    </div>
+</div>
+
+
+<section class="quote-slider">
+    <div class="slider-container">
+        <div class="quote-slide">
+            <div class="quote-icon"></div>
+            <blockquote>
+                <p>Health Is Not Valued Till Sickness Comes.</p>
+                <cite>THOMAS FULLER</cite>
+            </blockquote>
+        </div>
+        <div class="quote-slide">
+            <div class="quote-icon"></div>
+            <blockquote>
+                <p>An ounce of prevention is worth a pound of cure.</p>
+                <cite>BENJAMIN FRANKLIN</cite>
+            </blockquote>
+        </div>
+    </div>
+    <div class="slider-controls">
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+    </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-links">
+            <div>
+                <h4>Home</h4>
+                <ul>
+                    <li><a href="diagnostics.html">Diagnostics</a></li>
+                    <li><a href="#">Tests</a></li>
+                    <li><a href="#">Consultations</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="#">History</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="team.html">About us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="subscribe">
+            <h4>Subscribe</h4>
+            <form>
+                <input type="email" placeholder="Email address">
+                <button type="submit">
+                    <img src="images/arrow-right.png" alt="Submit">
+                </button>
+            </form>
+            <p><br>Hello, we are MedAware. Our mission is to revolutionize medical education by making anatomy learning engaging, interactive, and accessible for everyone.</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+      
+        <p>&copy; 2024 MedAware. All rights reserved.</p>
+    </div>
+</footer>
+
+
+     <script src="script.js"></script>
+     
+</body>
+</html>

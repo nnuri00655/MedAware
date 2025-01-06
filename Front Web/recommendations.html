@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedAware</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="MedAware Logo">
+        </div>
+        <nav class="nav">
+            <ul>
+               <li><a href="index.html" data-i18n="navHome">Home</a></li>
+                <li><a href="diagnostics.html" data-i18n="navDiagnostics">Diagnostics</a></li>
+                <li><a href="news.html" data-i18n="navNews">News</a></li>
+                <li><a href="team.html" data-i18n="navTeam">Team</a></li>
+                <li><a href="recommendations.html" data-i18n="navRecommendations" id="activepage">Recommendations</a></li>
+            </ul>
+        </nav>
+        <div class="actions">
+            <div class="moon-icon">
+    <a href="index-dark.html">
+        <img src="images/moon.png" alt="Moon Icon">
+    </a>
+</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+    <div class="language-dropdown">
+    <button class="language-button" data-i18n="languageButton">English</button>
+                <ul class="language-list">
+                    <li><a href="#" data-lang="en">English</a></li>
+                    <li><a href="#" data-lang="ru">Русский</a></li>
+                    <li><a href="#" data-lang="kz">Қазақ</a></li>
+                </ul>
+</div>
+
+            <a href="signup.html" class="signup" data-i18n="signUp">Sign Up</a>
+        </div>
+    </header>
+
+<main>
+    <section class="recommendations-section">
+        <h1 class="recommendations-title" data-i18n="recommendationsTitle">Personalized Recommendations</h1>
+        <div class="slider-container">
+            <button class="slider-button prev" data-i18n="prevButton">←</button>
+            <div class="recommendations-slider">
+                <div class="recommendations-card">
+                    <img src="images/recommendation1.png" alt="Recommendation Image 1" data-i18n-alt="recommendation1Alt">
+                    <div class="recommendations-content">
+                        <span class="recommendations-category" data-i18n="recommendation1Category">Diet</span>
+                        <h2 class="recommendations-heading" data-i18n="recommendation1Heading">Optimize Your Nutrition</h2>
+                        <p class="recommendations-description" data-i18n="recommendation1Description">
+                            Based on your recent activity, incorporating more fruits and vegetables into your diet can enhance your energy levels and overall well-being.
+                        </p>
+                        <a href="recommendationsmore.html" class="read-more" data-i18n="readMore">Read More</a>
+                    </div>
+                </div>
+                <div class="recommendations-card">
+                    <img src="images/recommendation2.png" alt="Recommendation Image 2" data-i18n-alt="recommendation2Alt">
+                    <div class="recommendations-content">
+                        <span class="recommendations-category" data-i18n="recommendation2Category">Exercise</span>
+                        <h2 class="recommendations-heading" data-i18n="recommendation2Heading">Stay Active with Tailored Workouts</h2>
+                        <p class="recommendations-description" data-i18n="recommendation2Description">
+                            Regular physical activity, such as 30 minutes of walking or light cardio, can improve your cardiovascular health and reduce stress levels.
+                        </p>
+                        <a href="recommendationsmore.html" class="read-more" data-i18n="readMore">Read More</a>
+                    </div>
+                </div>
+                <div class="recommendations-card">
+                    <img src="images/recommendation3.png" alt="Recommendation Image 3" data-i18n-alt="recommendation3Alt">
+                    <div class="recommendations-content">
+                        <span class="recommendations-category" data-i18n="recommendation3Category">Hydration</span>
+                        <h2 class="recommendations-heading" data-i18n="recommendation3Heading">Drink More Water</h2>
+                        <p class="recommendations-description" data-i18n="recommendation3Description">
+                            To improve hydration levels, aim to drink at least 8 glasses of water daily. Staying hydrated boosts focus and supports organ function.
+                        </p>
+                        <a href="recommendationsmore.html" class="read-more" data-i18n="readMore">Read More</a>
+                    </div>
+                </div>
+                <div class="recommendations-card">
+                    <img src="images/recommendation4.png" alt="Recommendation Image 4" data-i18n-alt="recommendation4Alt">
+                    <div class="recommendations-content">
+                        <span class="recommendations-category" data-i18n="recommendation4Category">Mental Health</span>
+                        <h2 class="recommendations-heading" data-i18n="recommendation4Heading">Manage Stress Effectively</h2>
+                        <p class="recommendations-description" data-i18n="recommendation4Description">
+                            Try mindfulness techniques like meditation or deep breathing to manage stress and maintain emotional balance throughout the day.
+                        </p>
+                        <a href="recommendationsmore.html" class="read-more" data-i18n="readMore">Read More</a>
+                    </div>
+                </div>
+                <div class="recommendations-card">
+                    <img src="images/recommendation5.png" alt="Recommendation Image 5" data-i18n-alt="recommendation5Alt">
+                    <div class="recommendations-content">
+                        <span class="recommendations-category" data-i18n="recommendation5Category">Sleep</span>
+                        <h2 class="recommendations-heading" data-i18n="recommendation5Heading">Improve Sleep Quality</h2>
+                        <p class="recommendations-description" data-i18n="recommendation5Description">
+                            For better sleep, establish a consistent schedule and avoid screen time before bed. A good night's rest supports overall health and energy.
+                        </p>
+                        <a href="recommendationsmore.html" class="read-more" data-i18n="readMore">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-button next" data-i18n="nextButton">→</button>
+        </div>
+    </section>
+</main>
+
+
+
+    <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-links">
+            <div>
+                <h4 data-i18n="footerLinksHomeTitle">Home</h4>
+                <ul>
+                    <li><a href="diagnostics.html" data-i18n="footerDiagnostics">Diagnostics</a></li>
+                    <li><a href="news.html" data-i18n="footerNews">News</a></li>
+                    <li><a href="recommendations.html" data-i18n="footerRecommendations">Recommendations</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 data-i18n="footerHelpTitle">Help</h4>
+                <ul>
+                    <li><a href="terms.html" data-i18n="footerTerms">Terms</a></li>
+                    <li><a href="privacy.html" data-i18n="footerPrivacy">Privacy</a></li>
+                    <li><a href="faq.html" data-i18n="footerFAQ">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 data-i18n="footerCompanyTitle">Company</h4>
+                <ul>
+                    <li><a href="team.html" data-i18n="footerAboutUs">About us</a></li>
+                    <li><a href="contact.html" data-i18n="footerContactUs">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="subscribe">
+            <h4 data-i18n="footerSubscribeTitle">Subscribe</h4>
+            <form>
+                <input type="email" placeholder="Email address" data-i18n-placeholder="footerEmailPlaceholder">
+                <button type="submit">
+                    <img src="images/arrow-right.png" alt="Submit" data-i18n-alt="footerSubmitAlt">
+                </button>
+            </form>
+            <p data-i18n="footerMission"><br>Hello, we are MedAware. Our mission is to revolutionize medical education by making anatomy learning engaging, interactive, and accessible for everyone.</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p data-i18n="footerCopyright">&copy; 2024 MedAware. All rights reserved.</p>
+    </div>
+</footer>
+
+
+     <script src="script3.js"></script>
+         <script src="script_lang.js"></script>
+
+     
+</body>
+</html>

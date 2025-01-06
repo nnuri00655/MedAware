@@ -1,0 +1,519 @@
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 10%;
+    font-family: 'Arial', sans-serif;
+    background-color: #222;
+    color: #fff;
+}
+
+.profile-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #2EAEAD;
+}
+
+.profile-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.profile-left {
+    width: 60%;
+}
+
+.profile-right {
+    width: 35%;
+    text-align: center;
+}
+
+.form-subtitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #ccc;
+}
+
+.gender-select {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.gender-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #2EAEAD;
+    border-radius: 5px;
+    background-color: #444;
+    color: #2EAEAD;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.gender-button.active {
+    background-color: #2EAEAD;
+    color: #fff;
+}
+
+.gender-button:hover {
+    background-color: #258f8c;
+    color: #fff;
+}
+
+.input-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.input-field {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.input-field:focus {
+    outline: 2px solid #2EAEAD;
+}
+
+.photo-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.profile-photo-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #555;
+    display: block;
+}
+
+.upload-photo-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #2EAEAD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: inline-block;
+}
+
+.upload-photo-button:hover {
+    background-color: #258f8c;
+}
+
+.delete-photo-button {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #FF6B6B;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+}
+
+.delete-photo-button:hover {
+    background: #FF4C4C;
+}
+
+.save-button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #2EAEAD;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.save-button:hover {
+    background-color: #258f8c;
+}
+
+.recommendations-section {
+    padding: 2rem 10%;
+    background-color: #222;
+    text-align: center;
+    color: #fff;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #2EAEAD;
+    margin-bottom: 2rem;
+}
+
+.recommendations-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.recommendation-item {
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recommendation-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.recommendation-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.recommendation-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.recommendation-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2EAEAD;
+    margin-bottom: 0.5rem;
+}
+
+.recommendation-description {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.recommendation-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+.recommendation-meta .recommendation-date {
+    margin-bottom: 0.5rem;
+}
+
+.recommendation-stats {
+    display: flex;
+    gap: 1rem;
+}
+
+.recommendation-stats span {
+    font-weight: bold;
+    color: #ccc;
+}
+
+.news-section {
+    padding: 2rem 10%;
+    background-color: #222;
+    text-align: center;
+    color: #fff;
+}
+
+.news-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.news-item {
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.news-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.news-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.news-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2EAEAD;
+    margin-bottom: 0.5rem;
+}
+
+.news-description {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.news-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+.news-meta .news-date {
+    margin-bottom: 0.5rem;
+}
+
+.news-stats {
+    display: flex;
+    gap: 1rem;
+}
+
+.news-stats span {
+    font-weight: bold;
+    color: #fff;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background-color: #222;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.faq-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: #2EAEAD;
+}
+
+.faq-item {
+    border: 1px solid #444;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: #333;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #444;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.faq-question:hover {
+    background: #555;
+}
+
+.faq-question span {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    display: none;
+    padding: 1rem;
+    background: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    border-top: 1px solid #555;
+    text-align: justify;
+    color: #ccc;
+}
+
+.faq-item.active .faq-answer {
+    display: block !important;
+}
+
+.terms-section {
+    padding: 4rem 10%;
+    color: #ccc;
+    background-color: #222;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+.terms-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2EAEAD;
+}
+
+.last-updated {
+    font-size: 1rem;
+    color: #aaa;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-style: italic;
+}
+
+.terms-article {
+    margin-bottom: 2rem;
+}
+
+.terms-heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #ccc;
+}
+
+.terms-article p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: #bbb;
+}
+
+.terms-article a {
+    color: #2EAEAD;
+    text-decoration: none;
+}
+
+.terms-article a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .terms-section {
+        padding: 2rem 5%;
+    }
+    .terms-title {
+        font-size: 2.5rem;
+    }
+    .terms-heading {
+        font-size: 1.5rem;
+    }
+    .terms-article p {
+        font-size: 0.9rem;
+    }
+}
+
+.privacy-section {
+    padding: 4rem 10%;
+    background-color: #222;
+    color: #ccc;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+.privacy-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2EAEAD;
+}
+
+.privacy-article {
+    margin-bottom: 2rem;
+}
+
+.privacy-heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #ccc;
+}
+
+.privacy-article p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: #bbb;
+}
+
+.privacy-article a {
+    color: #2EAEAD;
+    text-decoration: none;
+}
+
+.privacy-article a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .privacy-section {
+        padding: 2rem 5%;
+    }
+    .privacy-title {
+        font-size: 2.5rem;
+    }
+    .privacy-heading {
+        font-size: 1.5rem;
+    }
+    .privacy-article p {
+        font-size: 0.9rem;
+    }
+}
